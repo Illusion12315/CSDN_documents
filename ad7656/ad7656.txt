@@ -1,0 +1,12 @@
+{ signal: [
+  { name: "sys_clk_i",     wave: "P........." },
+  { name: "start_flag_i", wave: "010.......0" },
+  { name: "state",    wave: "2.3.|45x",  data: ["IDLE", "CONVST", "READ", "WAIT", "DONE"] },
+  { name: "convst ABC", wave: "0.1...0" },
+  { name: "start_flag_i",    wave: "x345x",  data: ["head", "body", "tail"] },
+  { name: "Request", wave: "01..0" },
+  ],
+  config: { hscale: 1 ,
+            skin: "lowkey" 
+        }
+}
